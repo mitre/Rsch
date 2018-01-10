@@ -105,8 +105,8 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><span class='co'># NOT RUN {</span>
-<span class='no'>connection</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='get_connection.html'>get_connection</a></span>(<span class='kw'>host</span> <span class='kw'>=</span> <span class='st'>"cuckoo.lbnl.gov"</span>, <span class='kw'>user</span> <span class='kw'>=</span> <span class='st'>"cliff"</span>, <span class='kw'>password</span> <span class='kw'>=</span> <span class='st'>"TopSecret"</span>)
-<span class='fu'>execute</span>(<span class='no'>connection</span>, <span class='st'>"grep \"nuclear\" /*"</span>)
+<span class='no'>connection</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='get_connection.html'>get_connection</a></span>(<span class='kw'>host</span> <span class='kw'>=</span> <span class='st'>"some.remote.system"</span>, <span class='kw'>user</span> <span class='kw'>=</span> <span class='st'>"you"</span>)
+<span class='fu'>execute</span>(<span class='no'>connection</span>, <span class='st'>"ps -ef | grep R /*"</span>)
 <span class='co'># }</span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">

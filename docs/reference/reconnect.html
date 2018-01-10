@@ -104,20 +104,17 @@
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>an Rsch_connection object</p>
+    <p>an Rsch_connection object
+ @examples
+connection <- get_connection(host = "cuckoo.lbnl.gov", user = "cliff", password = "TopSecret")
+execute(connection,"grep \"nuclear\" /*")
+results <- printout(connection)
+goodbye(connection)
+
+connection <- reconnect(connection, "TopSecret")
+execute(connection,"grep \"SDI\" /*")</p>
     
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><span class='co'># NOT RUN {</span>
-<span class='no'>connection</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='get_connection.html'>get_connection</a></span>(<span class='kw'>host</span> <span class='kw'>=</span> <span class='st'>"cuckoo.lbnl.gov"</span>, <span class='kw'>user</span> <span class='kw'>=</span> <span class='st'>"cliff"</span>, <span class='kw'>password</span> <span class='kw'>=</span> <span class='st'>"TopSecret"</span>)
-<span class='fu'><a href='execute.html'>execute</a></span>(<span class='no'>connection</span>,<span class='st'>"grep \"nuclear\" /*"</span>)
-<span class='no'>results</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='printout.html'>printout</a></span>(<span class='no'>connection</span>)
-<span class='fu'><a href='goodbye.html'>goodbye</a></span>(<span class='no'>connection</span>)
-
-<span class='no'>connection</span> <span class='kw'>&lt;-</span> <span class='fu'>reconnect</span>(<span class='no'>connection</span>, <span class='st'>"TopSecret"</span>)
-<span class='fu'><a href='execute.html'>execute</a></span>(<span class='no'>connection</span>,<span class='st'>"grep \"SDI\" /*"</span>)
-
-<span class='co'># }</span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -125,9 +122,7 @@
       <li><a href="#arguments">Arguments</a></li>
       
       <li><a href="#value">Value</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
+          </ul>
 
   </div>
 </div>

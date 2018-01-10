@@ -17,5 +17,5 @@ When you are done manipulating the remote system, use `goodbye` to close the con
 
 ```{r, eval=FALSE}       
 # install.packages("devtools")
-devtools::install_github("mitre/Rsch")
+devtools::install_github("mitre/Rsch", subdir = "rpkg")
 ```

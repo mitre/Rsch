@@ -1,0 +1,17 @@
+*******
+* 1.0.0
+*******
+
+* Rsch can now support multiple simultaneous connections per R session
+* Breaking API changes
+  * all commands now require the connection object be passed in (except for get_connection)
+* New API
+  * reconnect()
+  * print()
+
+
+*******
+* 0.1.0
+*******
+
+* users can retrieve the console output as a vector of strings.

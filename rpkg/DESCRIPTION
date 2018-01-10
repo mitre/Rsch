@@ -1,0 +1,18 @@
+Package: Rsch
+Type: Package
+Title: Connect and Interact with Remote Shells over SSH.
+Version: 1.0.0
+Date: 2015-06-04
+URL: https://github.com/mitre/Rsch
+BugReports: https://github.com/mitre/Rsch/issues
+Authors@R: as.person(c("Seth Wenchel <seth@wenchel.com> [cre, aut]",
+        "Matt Pollock <mpollock@mitre.org [aut]>",
+        "Atsuhiko Yamanaka [cph]"))
+Description: As a wrapper around the 'jcraft.com' 'JSch' java
+        library, 'Rsch' provides a simple interface for R users to
+        interact with shell sessions on remote servers.
+Imports: rJava, credentials
+License: Apache License 2.0 | file LICENSE
+LazyData: TRUE
+NeedsCompilation: no
+RoxygenNote: 6.0.1

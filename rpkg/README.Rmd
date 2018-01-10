@@ -1,0 +1,21 @@
+A package to connect to remote systems, execute system commands, collect results from `stdout`.
+
+## Use
+
+`Rsch` enables users to connect to remote systems and issue commnads, similar to what the base `system` function enables for the local system.
+This can be used to interrogate remote file systems, read data (e.g., using a `cat` or `head` system command), or execute any other system command that you like.
+
+## Key Features
+
+New connections are created using `get_connection`.
+Given a connection, `execute` will run a command on the remote system.
+The `execute` function will not return anything to your local R session.
+To get a return value, `printout` will capture everything printed to the remote `stdout` since the last call to `execute`.
+When you are done manipulating the remote system, use `goodbye` to close the connection.
+
+## Installation
+
+```{r, eval=FALSE}       
+# install.packages("devtools")
+devtools::install_github("mitre/Rsch")
+```

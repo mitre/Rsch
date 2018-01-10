@@ -11,7 +11,8 @@ Authors@R: as.person(c("Seth Wenchel <seth@wenchel.com> [cre, aut]",
 Description: As a wrapper around the 'jcraft.com' 'JSch' java
         library, 'Rsch' provides a simple interface for R users to
         interact with shell sessions on remote servers.
-Imports: rJava, credentials
+Imports: rJava
+Remotes: mitre/credentials
 License: Apache License 2.0 | file LICENSE
 LazyData: TRUE
 NeedsCompilation: no
